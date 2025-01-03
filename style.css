@@ -4,9 +4,33 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Noto Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+h2 {
+  font-family: "EB Garamond", serif;
+  font-size: var(--h2desktop);
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 15px;
+}
+
 p {
   font-family: "DM Sans", serif;
   font-style: normal;
   font-weight: 300;
   letter-spacing: 0.1px;
+}
+
+main {
+  display: block;
+  margin: auto;
+  max-width: 1350px;
 }
