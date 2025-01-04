@@ -1,3 +1,12 @@
+:root {
+  /**farver**/
+  --primary: #060030;
+  --secondary: #180ea6;
+  --accent: #5308e3;
+  --white: #f7f9fb;
+  --black: RGB(0, 0, 0);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +27,9 @@ h1 {
 }
 
 h2 {
-  font-family: "EB Garamond", serif;
+  font-family: "Open Sans", serif;
   font-size: var(--h2desktop);
-  font-weight: 500;
+  font-weight: 350;
   font-style: normal;
   margin-bottom: 15px;
 }
@@ -36,4 +45,44 @@ main {
   display: block;
   margin: auto;
   max-width: 1350px;
+}
+
+/********** Index style **********/
+
+.grid_index {
+  padding-inline: 200px;
+}
+
+.index_h1 {
+  background-color: var(--primary);
+  margin-bottom: 30px;
+  height: 80px;
+}
+
+.index_h1 h1 {
+  display: block;
+  color: var(--white);
+  margin-top: 0;
+  padding-top: 17px;
+}
+
+.index_container,
+.container_5,
+.container_ommig {
+  border: solid;
+  border-color: #060030;
+  background-color: var(--primary);
+}
+
+@media screen and (max-width: 800px) {
+  .grid_index {
+    display: block;
+    padding-inline: 30px;
+  }
+
+  .index_container,
+  .container_5,
+  .container_ommig {
+    margin-bottom: 30px;
+  }
 }
