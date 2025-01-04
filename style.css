@@ -5,6 +5,7 @@
   --accent: #5308e3;
   --white: #f7f9fb;
   --black: RGB(0, 0, 0);
+  --grey: #f0f1f5;
 }
 
 * {
@@ -22,15 +23,23 @@ h1 {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   text-align: center;
+  padding-top: 10px;
   margin-top: var(--space-md);
   margin-bottom: var(--space-md);
 }
 
 h2 {
   font-family: "Open Sans", serif;
-  font-size: var(--h2desktop);
+  font-size: var(--h3desktop);
   font-weight: 350;
   font-style: normal;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-family: "EB Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 550;
   margin-bottom: 15px;
 }
 
@@ -39,12 +48,28 @@ p {
   font-style: normal;
   font-weight: 300;
   letter-spacing: 0.1px;
+  margin-left: 2px;
+  margin-bottom: 15px;
+}
+
+ul li {
+  font-family: "DM Sans", serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  margin-left: 25px;
+  text-decoration: none;
+  margin-bottom: 15px;
 }
 
 main {
   display: block;
   margin: auto;
   max-width: 1350px;
+}
+
+html {
+  background-color: var(--grey);
 }
 
 /********** Index style **********/
@@ -84,5 +109,59 @@ main {
   .container_5,
   .container_ommig {
     margin-bottom: 30px;
+  }
+}
+
+.main_container {
+  /* background-image: url(indhold/background_grey.png);
+  aspect-ratio: 2/1;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color: var(--primary);
+}
+
+.text_container p {
+  margin-left: 3px;
+}
+
+.text_container li {
+  margin-left: 30px;
+}
+.text_container {
+  padding-inline: 20px;
+  padding-bottom: 30px;
+}
+
+.main_container hr {
+  display: block;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 40px;
+  color: var(--white);
+}
+
+.main_container h1 {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.text_container h4,
+.text_container p,
+.text_container ul {
+  color: var(--grey);
+}
+
+@media screen and (min-width: 800px) {
+  .main_container {
+    display: block;
+    margin: auto;
+  }
+
+  .tema_01 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding-left: 30px;
   }
 }
