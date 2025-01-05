@@ -72,6 +72,11 @@ html {
   background-color: var(--grey);
 }
 
+hr {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
 /********** Index style **********/
 
 .grid_index {
@@ -163,5 +168,45 @@ html {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     padding-left: 30px;
+  }
+}
+
+/**** 02_Web ****/
+
+.grid_02_1 {
+  padding: 30px;
+}
+
+.billeder_3 img {
+  display: block;
+  margin: auto;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.grid_02_2 {
+  display: block;
+  margin: auto;
+  width: 75%;
+}
+
+.text_section {
+  background-color: var(--secondary);
+  color: var(--grey);
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 800px) {
+  .grid_02_2 {
+    display: block;
+    margin: auto;
+    width: 75%;
+  }
+
+  .text_section h2,
+  .text_section p {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    padding: 10px;
   }
 }
