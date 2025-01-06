@@ -4,8 +4,35 @@
   --secondary: #180ea6;
   --accent: #5308e3;
   --white: #f7f9fb;
+  --box: #dee1ec;
   --black: RGB(0, 0, 0);
   --grey: #f0f1f5;
+
+  --h1mobil: 2rem;
+  --h1desktop: 1.5rem;
+
+  --h2mobil: 1.75rem;
+  --h2desktop: 2rem;
+
+  --h3mobil: 1.5rem;
+  --h3desktop: 1.75rem;
+
+  --h4mobil: 1.2rem;
+  --h4desktop: 1.5rem;
+
+  --pmobil: 0.9375rem;
+  --pdesktop: 1.2rem;
+
+  --minitekstmobil: 0.8125rem;
+  --minitekstdesktop: 0.6rem;
+
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 6rem;
 }
 
 * {
@@ -25,7 +52,7 @@ h1 {
   text-align: center;
   padding-top: 10px;
   margin-top: var(--space-md);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--h1desktop);
 }
 
 h2 {
@@ -33,13 +60,24 @@ h2 {
   font-size: var(--h3desktop);
   font-weight: 350;
   font-style: normal;
+  padding-inline: 30px;
   margin-bottom: 15px;
 }
 
+h3 {
+  font-family: "DM Sans", serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+
+  text-decoration: none;
+  margin-bottom: 15px;
+}
 h4 {
   font-family: "EB Garamond", serif;
   font-size: 1.2rem;
   font-weight: 550;
+  padding-inline: 30px;
   margin-bottom: 15px;
 }
 
@@ -48,6 +86,7 @@ p {
   font-style: normal;
   font-weight: 300;
   letter-spacing: 0.1px;
+  padding-inline: 30px;
   margin-left: 2px;
   margin-bottom: 15px;
 }
@@ -76,6 +115,12 @@ hr {
   display: block;
   margin: auto;
   width: 80%;
+}
+
+.hjemmeside {
+  display: block;
+  margin: auto;
+  max-width: 80%;
 }
 /********** Index style **********/
 
@@ -123,6 +168,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat; */
   background-color: var(--primary);
+  border-radius: 20px;
 }
 
 .text_container p {
@@ -175,12 +221,23 @@ hr {
 
 .grid_02_1 {
   padding: 30px;
+  background-color: var(--box);
+  border-radius: 20px;
+}
+
+.tekst_02 {
+  max-width: 80%;
+}
+.billeder_3 {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin-left: 150px;
 }
 
 .billeder_3 img {
   display: block;
   margin: auto;
-  max-width: 400px;
   margin-bottom: 30px;
 }
 
@@ -191,11 +248,22 @@ hr {
 }
 
 .text_section {
-  background-color: var(--secondary);
-  color: var(--grey);
-  margin-bottom: 30px;
+  background-color: var(--box);
+  color: var(--black);
+
   padding-block: 20px;
+  border-radius: 20px;
 }
+
+.text_section,
+.grid_02_4 {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 800px) {
   .grid_02_2 {
     display: block;
@@ -203,11 +271,82 @@ hr {
     width: 75%;
   }
 
-  .text_section h2,
+  .text_section h3,
   .text_section p {
     display: block;
     margin: auto;
-    max-width: 800px;
+    max-width: 600px;
     padding: 10px;
   }
+}
+
+.grid_01_3 {
+  background-color: var(--box);
+  border-radius: 20px;
+}
+
+.grid_01_3 div {
+  padding-inline: 30px;
+}
+
+.grid_03_2 {
+  max-width: 75%;
+}
+
+.grid_om_mig {
+  display: block;
+  margin: auto;
+  max-width: 85%;
+  background-color: var(--primary);
+  color: var(--white);
+  margin-top: var(--space-md);
+  border-radius: 125px 125px 0px 0px;
+}
+
+.grid_04_1 {
+  background-color: var(--box);
+  padding: 30px;
+  border-radius: 30px;
+  margin-bottom: var(--space-xxl);
+}
+
+.grid_diagrammer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.grid_04_4 {
+  background-color: var(--box);
+  padding: 30px;
+  border-radius: 30px;
+  margin-bottom: var(--space-xxl);
+}
+
+.grid_05_1 {
+  background-color: var(--box);
+  padding: 30px;
+  border-radius: 30px;
+  margin-bottom: var(--space-xxl);
+}
+
+.passionssite_h2 {
+  margin-left: 30px;
+}
+
+.grid_05_3 {
+  background-color: var(--box);
+  padding: 30px;
+  border-radius: 30px;
+  margin-bottom: var(--space-xxl);
+}
+
+.grid_05_5 {
+  padding: 30px;
+  margin-bottom: var(--space-xxl);
+}
+
+.heruristisk_variabler {
+  width: 80%;
+  color: var(--white);
 }
