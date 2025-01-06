@@ -59,7 +59,7 @@ header {
 .logo img {
   width: 195px;
   height: 60px;
-  padding-left: 1rem;
+  padding-left: 2.5rem;
   object-fit: unset;
 }
 
@@ -432,6 +432,7 @@ li:hover {
 
 .footer_bottom p {
   font-size: var(--minitekstdesktop);
+  width: 100%;
   padding-left: 15px;
   margin-top: 5px;
   /* margin-top: 60px; */
@@ -453,6 +454,7 @@ li:hover {
     flex-direction: column;
     justify-content: start;
     gap: 10px;
+    padding-left: 30px;
   }
 
   .footer_top {
@@ -480,12 +482,12 @@ li:hover {
   }
 
   .tekst_footer {
-    width: 50%;
+    width: auto;
   }
 
   .footer_menu {
     margin-right: 150px;
-    width: 200%;
+    width: 100%;
   }
 }
 
@@ -501,6 +503,17 @@ li:hover {
     margin: auto;
     margin-top: 25px;
     margin-inline: 80px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer_section {
+    display: block;
+  }
+
+  .footer_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
