@@ -194,6 +194,7 @@ hr {
   background-color: var(--secondary);
   color: var(--grey);
   margin-bottom: 30px;
+  padding-block: 20px;
 }
 @media screen and (min-width: 800px) {
   .grid_02_2 {

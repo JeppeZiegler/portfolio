@@ -325,6 +325,13 @@ nav {
   font-size: small;
 }
 
+.tekst_footer {
+  font-family: "Libre Franklin", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: small;
+}
+
 .footer_logoer {
   display: flex;
   flex-direction: column;
@@ -390,10 +397,10 @@ a {
   font-style: normal;
   font-size: small;
   letter-spacing: normal;
-  margin-left: 15px;
+  margin-left: 0px;
   margin-top: 18px;
   margin-bottom: 35px;
-  line-height: 25px;
+  line-height: 12px;
 }
 
 .footer_menu a:hover,
@@ -444,7 +451,7 @@ li:hover {
   .footer_logoer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     gap: 10px;
   }
 
@@ -471,18 +478,29 @@ li:hover {
   .menu a:hover {
     scale: 1.2;
   }
+
+  .tekst_footer {
+    width: 50%;
+  }
+
+  .footer_menu {
+    margin-right: 150px;
+    width: 200%;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .logo_footer img {
     display: block;
     margin: auto;
+    width: 80%;
   }
 
   .info_footer {
     display: block;
     margin: auto;
     margin-top: 25px;
+    margin-inline: 80px;
   }
 }
 
