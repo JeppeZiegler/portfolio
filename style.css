@@ -44,22 +44,56 @@
 img {
   width: 100%;
 }
-h1 {
+/* h1 {
   font-family: "Noto Serif", serif;
   font-weight: 300;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-size: 48px;
+  font-variation-settings: "wdth" 90;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: var(--space-md);
+  margin-bottom: var(--h1desktop);
+} */
+
+/* h1 {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: var(--space-md);
+  margin-bottom: var(--h1desktop);
+} */
+
+h1 {
+  font-family: "raleway", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 48px;
+  font-variation-settings: "wdth" 90;
   text-align: center;
   padding-top: 10px;
   margin-top: var(--space-md);
   margin-bottom: var(--h1desktop);
 }
 
-h2 {
+/* h2 {
   font-family: "Open Sans", serif;
   font-size: var(--h3desktop);
   font-weight: 350;
   font-style: normal;
+  padding-inline: 30px;
+  margin-bottom: 15px;
+} */
+
+h2 {
+  font-family: "raleway", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  font-variation-settings: "wdth" 90;
   padding-inline: 30px;
   margin-bottom: 15px;
 }
@@ -73,10 +107,21 @@ h3 {
   text-decoration: none;
   margin-bottom: 15px;
 }
-h4 {
+
+/* h4 {
   font-family: "EB Garamond", serif;
   font-size: 1.2rem;
   font-weight: 550;
+  padding-inline: 30px;
+  margin-bottom: 15px;
+} */
+
+h4 {
+  font-family: "raleway", serif;
+  font-weight: 550;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-variation-settings: "wdth" 90;
   padding-inline: 30px;
   margin-bottom: 15px;
 }
@@ -84,6 +129,7 @@ h4 {
 p {
   font-family: "DM Sans", serif;
   font-style: normal;
+  font-size: var(--pdesktop);
   font-weight: 300;
   letter-spacing: 0.1px;
   padding-inline: 30px;
@@ -96,6 +142,7 @@ ul li {
   font-style: normal;
   font-weight: 300;
   letter-spacing: 0.1px;
+
   margin-left: 25px;
   text-decoration: none;
   margin-bottom: 15px;
@@ -201,6 +248,11 @@ hr {
 .text_container p,
 .text_container ul {
   color: var(--grey);
+}
+
+.tema_01 ul li {
+  font-size: var(--pdesktop);
+  text-decoration: none;
 }
 
 @media screen and (min-width: 800px) {

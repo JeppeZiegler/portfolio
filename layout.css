@@ -94,10 +94,10 @@ nav {
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
-  font-family: "Libre Franklin", serif;
+  font-family: "DM Sans", serif;
   font-weight: normal;
   font-style: normal;
-  font-size: small;
+  font-size: medium;
   letter-spacing: normal;
 }
 
@@ -357,17 +357,19 @@ nav {
   color: var(--white);
   letter-spacing: 3px;
   padding-top: 30px;
-  font-family: "Libre Franklin", serif;
+  font-family: "DM Sans", serif;
   font-weight: lighter;
   font-style: normal;
-  font-size: small;
+  font-size: medium;
 }
 
 .tekst_footer {
-  font-family: "Libre Franklin", serif;
+  font-family: "DM Sans", serif;
   font-weight: normal;
   font-style: normal;
-  font-size: small;
+  font-size: medium;
+  list-style: none;
+  line-height: 20px;
 }
 
 .footer_logoer {
@@ -407,7 +409,7 @@ nav {
 
 .info_footer h5 {
   margin-bottom: 10px;
-  font-family: "Libre Franklin", serif;
+  font-family: "DM Sans", serif;
   font-weight: normal;
   font-style: normal;
   font-size: medium;
@@ -422,7 +424,7 @@ a {
 }
 
 .footer_menu_overskrift {
-  font-family: "Libre Franklin", serif;
+  font-family: "DM Sans", serif;
   font-weight: normal;
   font-style: normal;
   font-size: medium;
@@ -430,10 +432,10 @@ a {
 }
 
 .footer_menu ul {
-  font-family: "Libre Franklin", serif;
+  font-family: "DM Sans", serif;
   font-weight: normal;
   font-style: normal;
-  font-size: small;
+  font-size: medium;
   letter-spacing: normal;
   margin-left: 0px;
   margin-top: 18px;
