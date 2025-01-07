@@ -216,10 +216,24 @@ hr {
   background-repeat: no-repeat; */
   background-color: var(--primary);
   border-radius: 20px;
+  margin: 30px;
+}
+
+.text_container_temabeskrivelse h4,
+.text_container_temabeskrivelse p {
+  color: var(--grey);
+}
+
+.text_container_temabeskrivelse p {
+  padding-bottom: 30px;
 }
 
 .text_container p {
   margin-left: 3px;
+}
+
+.text_container p:hover {
+  text-decoration: underline;
 }
 
 .text_container li {
@@ -330,6 +344,16 @@ hr {
     max-width: 600px;
     padding: 10px;
   }
+
+  .grid_diagrammer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .overskrift_uden_alternate {
+    color: var(--white);
+  }
 }
 
 .grid_01_3 {
@@ -348,11 +372,12 @@ hr {
 .grid_om_mig {
   display: block;
   margin: auto;
-  max-width: 85%;
+  max-width: 100%;
   background-color: var(--primary);
   color: var(--white);
   margin-top: var(--space-md);
-  border-radius: 125px 125px 0px 0px;
+  border-radius: 50px;
+  margin-bottom: var(--space-md);
 }
 
 .grid_04_1 {
@@ -360,12 +385,6 @@ hr {
   padding: 30px;
   border-radius: 30px;
   margin-bottom: var(--space-xxl);
-}
-
-.grid_diagrammer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
 }
 
 .grid_04_4 {
@@ -400,5 +419,165 @@ hr {
 
 .heruristisk_variabler {
   width: 80%;
-  color: var(--white);
+}
+
+.overskrift_emner {
+  color: var(--black);
+}
+
+.overskrift_emner h3 {
+  font-weight: 900;
+}
+.overskrift_emner:hover {
+  text-decoration: underline;
+}
+
+.overskrift_uden {
+  font-weight: 900;
+}
+
+.overskrift_uden_alternate {
+  font-weight: 900;
+}
+
+.overskrift_website {
+  color: black;
+}
+
+.overskrift_website:hover {
+  color: var(--accent);
+}
+
+@media screen and (max-width: 800px) {
+  .overskrift_emner {
+    text-align: center;
+  }
+
+  .overskrift_emner h3 {
+    margin-top: var(--space-xl);
+  }
+
+  .overskrift_uden,
+  .overskrift_uden_alternate {
+    text-align: center;
+    margin-top: var(--space-xl);
+  }
+
+  .tekst_02,
+  .billeder_3 {
+    display: block;
+    margin: auto;
+  }
+
+  .grid_styletile {
+    margin-bottom: var(--space-lg);
+  }
+
+  .grid_styletile div img {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+  }
+
+  .grid_03_4 div img {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+  }
+
+  .img_prototype a img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .grid_03_2 {
+    display: block;
+    margin: auto;
+
+    max-width: 60%;
+  }
+
+  .grid_04_7 div img {
+    display: block;
+    margin: auto;
+
+    max-width: 70%;
+  }
+
+  .grid_04_7 {
+    padding-bottom: var(--space-xxl);
+  }
+
+  .grid_04_5 div img {
+    display: block;
+    margin: auto;
+
+    max-width: 60%;
+  }
+
+  .grid_diagrammer div img {
+    display: block;
+    margin: auto;
+
+    max-width: 60%;
+  }
+
+  .grid_diagrammer {
+    margin-bottom: var(--space-xxl);
+  }
+
+  .grid_04_2 div img {
+    display: block;
+    margin: auto;
+
+    max-width: 60%;
+  }
+
+  .heruristisk_variabler {
+    display: block;
+    margin: auto;
+
+    max-width: 60%;
+  }
+
+  .grid_05_7 {
+    margin-bottom: var(--space-xxl);
+  }
+
+  .grid_05_6 div img {
+    display: block;
+    margin: auto;
+
+    max-width: 60%;
+  }
+
+  iframe {
+    display: block;
+    margin: auto;
+    min-width: 310px;
+  }
+
+  .container_05_section_2 {
+    margin-bottom: var(--space-xxl);
+  }
+
+  .container_05_section_2 div img {
+    display: block;
+    margin: auto;
+    max-width: 70%;
+    margin-bottom: var(--space-lg);
+  }
+
+  .grid_05_2 div img {
+    display: block;
+    margin: auto;
+
+    max-width: 60%;
+  }
+
+  video {
+    display: block;
+    margin: auto;
+    min-width: 310px;
+  }
 }

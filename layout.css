@@ -251,42 +251,42 @@ nav {
 }
 
 .img_container1 {
-  background-image: url(indhold/index_01_intro.png);
+  background-image: url(indhold/billeder/index_01_intro.webp);
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .img_container2 {
-  background-image: url(indhold/index_02_web.png);
+  background-image: url(indhold/billeder/index_02_web.webp);
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .img_container3 {
-  background-image: url(indhold/index_03_ux.png);
+  background-image: url(indhold/billeder/index_03_ux.webp);
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .img_container4 {
-  background-image: url(indhold/index_04_animation.png);
+  background-image: url(indhold/billeder/index_04_animation.webp);
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .img_container5 {
-  background-image: url(indhold/index_05_indhold.png);
+  background-image: url(indhold/billeder/index_05_indhold.webp);
   aspect-ratio: 18/10;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .img_container_ommig {
-  background-image: url(indhold/index_profilbillede_mig.png);
+  background-image: url(indhold/billeder/profilbillede.webp);
   aspect-ratio: 20/10;
   background-size: cover;
   background-repeat: no-repeat;
@@ -583,7 +583,7 @@ li:hover {
 }
 
 .img_container_01_1 {
-  background-image: url(indhold/01_introuge_mit_første_domaene.png);
+  background-image: url(indhold/billeder/01_introuge_mit_første_domaene.webp);
   aspect-ratio: 20/11;
   width: 100%;
   background-size: cover;
@@ -591,7 +591,7 @@ li:hover {
 }
 
 .img_container_01_2 {
-  background-image: url(indhold/01_intro_praesentationskort.png);
+  background-image: url(indhold/billeder/01_intro_praesentationskort.webp);
   aspect-ratio: 20/11;
   width: 100%;
   background-size: cover;
@@ -992,30 +992,58 @@ li:hover {
   padding: 50px;
 }
 .img_container_om_mig {
-  background-image: url(indhold/profilbillede.png);
+  background-image: url(indhold/billeder/profilbillede.webp);
   aspect-ratio: 1/1;
   width: 100%;
+  max-width: 80%;
+  border-radius: 0%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.img_container_cv {
-  background-image: url(indhold/Cv.png);
-  aspect-ratio: 1/1;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+.img_container_om_mig {
+  display: block;
+  margin: auto;
+  margin-top: var(--space-md);
+}
+
+.om_mig h2,
+.om_mig p {
+  padding-left: 60px;
+  padding-top: 10px;
+}
+
+.cv h2,
+.cv p,
+.cv h4 {
+  padding-left: 60px;
+  padding-top: 10px;
+}
+
+.om_mig_list {
+  font-family: "DM sans";
+  font-size: 1.2rem;
+  padding-left: 60px;
+}
+
+.cv ul li {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 800px) {
   .grid_om_mig {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     gap: 20px;
   }
 
-  .img_container_om_mig {
-    grid-column: 1/2;
-    grid-row: 1/2;
+  .om_mig {
+    grid-column: 1;
+  }
+
+  .cv {
+    grid-row: 1;
+    grid-column: 2;
   }
 }
