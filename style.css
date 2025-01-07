@@ -585,6 +585,6 @@ hr {
 .active {
   background-color: var(--accent);
   scale: 1.2;
-
+  border-radius: 20px;
   color: white;
 }
