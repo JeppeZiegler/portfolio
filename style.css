@@ -581,3 +581,10 @@ hr {
     min-width: 310px;
   }
 }
+
+.active {
+  background-color: var(--accent);
+  scale: 1.2;
+
+  color: white;
+}
