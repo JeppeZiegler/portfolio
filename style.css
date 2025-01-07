@@ -580,6 +580,10 @@ hr {
     margin: auto;
     min-width: 310px;
   }
+
+  iframe {
+    height: auto;
+  }
 }
 
 .active {

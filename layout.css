@@ -872,8 +872,13 @@ li:hover {
   .grid_05_2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+
     gap: 10px;
+  }
+
+  video {
+    display: block;
+    margin: auto;
   }
 
   .container_05_section_2 {
