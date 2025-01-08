@@ -62,7 +62,8 @@
                             vores
                             eget koncept og idé. Vi kiggede på andre spildesigns, og lærte om teorier og konventioner,
                             inden for design af UI-elementer, figurelementer, baggrundsdesign og kompositionsteknikker.
-                            Løbende i processen udviklede vi vores idé til koncept i Adobe Illustrator, hvor vi lærte at
+                            Løbende i processen udviklede vi vores spil fra idé til koncept i Adobe Illustrator, hvor vi
+                            lærte at
                             rentegne grafikken til vores spil. Vi kiggede indvidere på html struktur, css animationer og
                             javascript til at animere vores spil.</p>
                     </div>
@@ -78,13 +79,13 @@
                             </li>
                             <li>Grundlæggende viden om design af spil-elementer. Vi kiggede på baggrundsdesign
                                 (atmosfærisk
-                                perspektiv, kontraster, focal point, rule of thirds). Figurur og karaktur designs
+                                perspektiv, kontraster, focal point, rule of thirds). Figur- og karaktur designs
                                 (babybias,
                                 solid drawing, line of action, asymmetry, bouba og kiki). Start og slutskærme. Og
                                 skitserings- og idégenereringsteknikker, hvor vi lavede moodboards og en
                                 paperprototyper.
                             </li>
-                            <li>Grundlæggende medellerings- og struktureringspricipper i form af aktivitetes- og state
+                            <li>Grundlæggende modellerings- og struktureringspricipper i form af aktivitetes- og state
                                 machine diagrammer</li>
                             <li>Hvordan man laver css-animationer udfra @keyframes</li>
                             <li>Grundlæggende javascript (funktioner, metoder (addClass/removeClass), variabler
@@ -154,7 +155,8 @@
                                 spil
                                 (med alt grafik og lyde)</a></p>
 
-
+                        <br>
+                        <h4>Afleveringer</h4>
                         <p><a
                                 href="https://docs.google.com/document/d/1FBfH34Yq0akc9qPzL6x_RNFFxZ-G81cVLyhf7akpHQ4/edit?usp=sharing">04.01.01
                                 Link til site v1(skelet)</a></p>
@@ -179,8 +181,8 @@
                     <h2>Idé og koncept</h2>
                     <p>I tema 4 skulle vi lave vores eget lille spil. Vi startede med at research og udvikle vores idé
                         og
-                        koncept. Jeg startede med at fine en stil. Jeg designede min figur ud fra inspiration fra den
-                        japanske Kawaii stil, som er når karakterers træk bliver meget overdimensionelle og beskrevet
+                        koncept. Jeg startede med at finde en stil. Jeg designede min figur ud fra inspiration fra den
+                        japanske Kawaii stil, som er når en karakterers træk bliver meget overdimensionelle og beskrevet
                         som
                         nuttet. Mit
                         spil tog inspiration og er designet ud fra flat-design med en lille smule retrodesign. Altså et
@@ -193,15 +195,13 @@
                     </p>
                     <p>Da vi skulle udvikle et spilkoncept, startede vi med at overveje spillets historie, fra start til
                         slut. Altså hvordan skal man kunne vinde, hvordan skal man
-                        kunne tabe og hvilke UI-elementer der skulle med. Derefter begyndte jeg på mine skitser og
+                        kunne tabe og hvilke UI-elementer skal der med. Derefter begyndte jeg på mine skitser og
                         lavede en
                         papirsprotoype, med
-                        udklippede spilelementer, som var en sjov måde at visualisere spilkonceptet på en meget simpel
-                        og
-                        nem måde.</p>
+                        udklippede spilelementer, som var en billig og nem måde at visualisere et spilkonceptet</p>
                     <p>Da jeg havde beslutet mig om hvordan mit spil skulle fungerer, begyndte jeg at rentegne mine
                         spilelementer i Adobe Illustrator. Her lærte jeg
-                        om formgivning, og hvordan man kan designe figure og elementer. Samt baggrund som var lavet ud
+                        om formgivning, og hvordan man kan designe figure og elementer. Samt baggrunde som jeg lavet ud
                         fra
                         atmosfærisk perspektiv, med mørke farver i forgrunden og lysere i baggrunden. Senere i processen
                         lavede vi
@@ -272,7 +272,7 @@
                         "stopSpillet".
 
                         Aktivitetsdiagram er lidt mere simpelt. Det en model som giver indblik i hvordan forskellige
-                        ting i
+                        elementer i
                         spillet forholder sig til hinanden. Det beskriver
                         spillets flow kan man sige. Eksempelvis kan man se at når spillet starter, så begynder elementer
                         at
@@ -304,13 +304,14 @@
             <div class="grid_04_4">
                 <div>
                     <h2>Opsætning af html og css animationer</h2>
-                    <p>Da vi så begyndte at animere på vores spil, lærte vi html struktur i form af at have en
+                    <p>Da vi så begyndte at animere på vores spil, lærte vi om html struktur. Vi brugte en
                         container,
                         med en sprite inden i, hvor der ligger vores spilelementer i form af .svg'er. Det gør man fordi
                         så
                         kan man animere på containeren og spriten hver for sig. Eksempelvis kan containeren rykke hen
                         over
-                        skærmen, mens spriten med billede i roterer eller forsvinder. Man kan faktisk se det på billedet
+                        skærmen, mens spriten med billede i, kan lave en anden animation, så som at roterer eller
+                        forsvinder. Man kan faktisk se det på billedet
                         hvor vi lavede css animationer, for at få et element til at falde. Man gør det ved at give
                         animationen et navn, herfter kan man vælge om animationen skal gentage sig
                         (animation-iteration-count), hvor langt tid animationen skal tage (animation-duration) og andre
@@ -319,15 +320,17 @@
                         tilfælde.
                         Senere skal man så refererer til animationerne på spilelementerne i javascript.
                     </p>
-                    <p>Herefter lavede vi en række øvelser hvor vi brugte javascript til at styrer animationerne på en
+                    <p>Vi lavede en række øvelser hvor vi brugte javascript til at styrer animationerne på en
                         "god"
-                        og en "dårlig" smiley. Vi testede forskellige animationer, lavede fejlfindingsøvelser, alt
+                        og en "dårlig" element. Vi startede med at bruge smileys og senere vores egne spilelementer. Vi
+                        testede forskellige animationer, lavede fejlfindingsøvelser. Alt
                         sammen
                         for at få det basale fra javascript på plads, inden vi skulle begynde på vores egne spil. Når
                         animationerne ikke virkede eller der var en fejl i javascriptet, var det en god idé at kigge på
-                        inspect console, hvor man kunne følge med i de forskellige javascript funktioner. Man kunne
+                        inspect console, som er et værktøj i browseren hvor man kunne følge med i de forskellige html,
+                        css og javascript funktioner. Man kunne
                         f.eks se
-                        når sidenVises eller checke at javascriptet registrerer dit click/mousedown.</p>
+                        når sidenVises eller checke omjavascriptet registrerede dit click/mousedown.</p>
                 </div>
                 <div class="grid_04_5">
                     <div>
@@ -365,7 +368,7 @@
                         metoden addEventListener, kan man så lave funktionen til. Som skal have samme navn. Så function
                         sidenVises efterfulgt af console.log(sidenVises). Her kan man så lave document.querySelector,
                         med
-                        enten containeren eller spriten efter hvad man vil animere. og enten tilføje en animation
+                        enten containeren eller spriten efter hvad man vil animere på. Og enten tilføje en animation
                         (classList.add(fald eksempelvis)) eller lave en addEventListener med click eller mousedown, som
                         gør
                         at når du klikker så kommer der en ny funktion.
@@ -374,11 +377,12 @@
                         eller animationiteration. Som er tre events der når vi lytter efter om en animation starter,
                         slutter
                         eller gentager sig. </p>
-                    <p>Når en animation er færdig er man nødt til at fjerne alle klasserne på elementet, vha.
-                        navn.classList
-                        = "; og når så gerne vil sætte en ny position og animation på elementet skal man lave det der
+                    <p>Når en animation er færdig er man nødt til at fjerne alle klasserne på elementerne, vha.
+                        .classList
+                        = "; og hvis man så gerne vil sætte en ny position og animation på et element, så er man nødt
+                        til at lave det der
                         hedder
-                        et force reflow vha. navn.offsetLeft; ellers kan man ikke få lov til både at remove og add en
+                        et force reflow vha. .offsetLeft; Fordi man ikke kan både remove og add en
                         class
                         i samme funktion.</p>
                     <p>Da vi næsten var færdige med spillet, var der en række ting man kunne gøre for at spillet bliver
